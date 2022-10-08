@@ -29,6 +29,7 @@ public class HomePageTest extends BaseClass {
 	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
 	public void setup(String browser) {
 		launchApp(browser); 
+		
 	}
 	
 	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
@@ -56,6 +57,7 @@ public class HomePageTest extends BaseClass {
 		boolean result=homePage.validateOrderHistory();
 		Assert.assertTrue(result);
 		Log.endTestCase("orderHistoryandDetailsTest");
+		
 	}
 	
 }
